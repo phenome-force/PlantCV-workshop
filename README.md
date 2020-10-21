@@ -11,6 +11,7 @@ and [Noah Fahlgren](https://www.danforthcenter.org/our-work/principal-investigat
 **Twitter**: [@plantcv](https://twitter.com/plantcv)
 
 ## Citations
+Veley KM, Berry JC, Fentress SJ, Schachtman DP, Baxter I, Bart R. 2017. High-throughput profiling and analysis of plant responses over time to abiotic stress. Plant direct 1:e00023. DOI: [10.1002/pld3.23](https://doi.org/10.1002/pld3.23).
 
 Gehan MA, Fahlgren N, Abbasi A, Berry JC, Callen ST, Chavez L, Doust AN, Feldman MJ, Gilbert KB, Hodge JG, Hoyer JS, Lin A, Liu S, Lizárraga C, Lorence A, Miller M, Platon E, Tessman M, Sax T. 2017. PlantCV v2: Image analysis software for high-throughput plant phenotyping. PeerJ 5:e4088. DOI: [10.7717/peerj.4088](https://doi.org/10.7717/peerj.4088).
 
