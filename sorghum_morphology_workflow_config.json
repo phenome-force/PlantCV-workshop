@@ -1,12 +1,12 @@
 {
-    "input_dir": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/sorghum_subset",
-    "json": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/sorghum_subset.json",
-    "filename_metadata": ["imgtype","camera","frame","zoom","lifter","gain","exposure","other","id","timestamp","plantbarcode"],
-    "workflow": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/sorghum_shape_color_morph_workflow.py",
-    "img_outdir": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/subset_outputs",
-    "tmp_dir": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/subset_temp",
-    "start_date": "1990-01-01-01-01-01",
-    "end_date": "2020-09-25-01-01-01",
+    "input_dir": "./sorghum_images",
+    "json": "./sorghum_results.json",
+    "filename_metadata": ["imgtype", "camera", "frame", "zoom", "lifter", "gain", "exposure", "other", "id", "timestamp", "plantbarcode"],
+    "workflow": "./sorghum_morph_workflow.py",
+    "img_outdir": "./output_images",
+    "tmp_dir": "./subset_temp",
+    "start_date": null,
+    "end_date": null,
     "imgformat": "png",
     "delimiter": "_",
     "metadata_filters": {},
@@ -16,15 +16,14 @@
     "coprocess": null,
     "cleanup": true,
     "append": true,
-    "cluster": "HTCondorCluster",
+    "cluster": "LocalCluster",
     "cluster_config": {
-        "n_workers":50,
+        "n_workers":2,
         "cores": 1,
         "memory": "1GB",
         "disk": "1GB",
-        "log_directory": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/subset_outputs/job_logs",
-        "local_directory": "/shares/bioinformatics/hschuhl/sorghum_nitrogen/subset_outputs/local_logs",
-        "job_extra": {"getenv": "true"}
+        "log_directory": "./job_logs",
+        "local_directory": "./local_logs"
     },
     "metadata_terms": {
         "camera": {
