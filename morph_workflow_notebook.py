@@ -190,6 +190,18 @@ def main():
     # Measure stem characteristics like stem angle and length
     # stem_img = pcv.morphology.analyze_stem(rgb_img=img, stem_objects=other_objects)
 
+    # Remove unneeded observations (hack)
+    _ = pcv.outputs.observations.pop("tips")
+    _ = pcv.outputs.observations.pop("branch_pts")
+    angles = pcv.outputs.observations["segment_insertion_angle"]["value"]
+    remove_indices = []
+    for i, value in enumerate(angles):
+        if value == "NA":
+            remove_indices.append(i)
+    remove_indices.sort(reverse=True)
+    for i in remove_indices:
+        _ = pcv.outputs.observations["segment_insertion_angle"]["value"].pop(i)
+
     # ## Save the results out to file for downsteam analysis
     pcv.print_results(filename=args.result)
 
